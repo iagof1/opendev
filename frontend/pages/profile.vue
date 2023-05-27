@@ -2,7 +2,7 @@
   <div class="p-4">
     <profile-header :user="user"></profile-header>
     <profile-details :user="user"></profile-details>
-    <user-posts :posts="posts"></user-posts>
+    <profile-posts :posts="posts"></profile-posts>
   </div>
   </template>
 

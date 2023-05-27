@@ -1,19 +1,18 @@
 <template>
     <div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div class="max-w-md w-full space-y-8">
-        <div class="text-center">
-          <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Sign in to your account
-          </h2>
-        </div>
-        <login-form></login-form>
-
-        <div class="text-center">
-          <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Or create a new account
-          </h2>
-        </div>
-        <register-form></register-form>
+        <component :is="loginForm ? FormLogin : FormRegister" />
+        <button @click="loginForm = !loginForm">
+          {{ loginForm ? 'Create an account' : 'Sign in' }}
+        </button>
       </div>
     </div>
   </template>
+
+<script setup>
+
+const FormLogin = resolveComponent('FormLogin');
+const FormRegister = resolveComponent('FormRegister');
+const loginForm = ref(false);
+
+</script>

@@ -1,6 +1,6 @@
 <template>
     <div>
-      <friend-list></friend-list>
+      <friends-list></friends-list>
       <slot />
     </div>
 </template>
