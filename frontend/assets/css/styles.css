@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    input {
+      @apply block w-full p-2 rounded-md border-0 py-1.5 pr-10 text-red-900 ring-1 ring-inset ring-red-300 placeholder:text-red-300 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6;
+    }
+
+    svg {
+      @apply h-5 w-5
+    }
+
+    button {
+      @apply inline-flex items-center justify-center gap-x-1.5 rounded-md bg-[#7D84B2] px-3 py-2 text-sm font-semibold text-white hover:border-[1px] hover:text-[#7D84B2] shadow-sm hover:bg-white focus-visible:outline hover:border-[#7D84B2];
+    }
+
+    h2 {
+      @apply text-2xl font-extrabold text-[#7D84B2];
+    }
+}

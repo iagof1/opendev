@@ -1,9 +1,9 @@
 export default defineAppConfig({
-    title: 'Open source projects social media',
-    theme: {
-      dark: true,
-      colors: {
-        primary: '#ff0000'
-      }
+  title: 'Open source projects social media',
+  theme: {
+    dark: true,
+    colors: {
+      primary: '#ff0000'
     }
-  })
+  }
+});

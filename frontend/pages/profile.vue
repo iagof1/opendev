@@ -4,21 +4,21 @@
     <profile-details :user="user"></profile-details>
     <profile-posts :posts="posts"></profile-posts>
   </div>
-  </template>
+</template>
 
 <script setup>
 definePageMeta({
-  layout: "loggedin",
+  layout: 'loggedin'
 });
 const user = ref({
-    name: 'John Doe',
-    profilePic: '/path/to/profile.jpg',
-    coverPic: '/path/to/cover.jpg',
-    bio: 'Software Developer at OpenAI',
-    location: 'San Francisco, CA',
-  })
-const store = useNuxtApp()
+  name: 'John Doe',
+  profilePic: '/path/to/profile.jpg',
+  coverPic: '/path/to/cover.jpg',
+  bio: 'Software Developer at OpenAI',
+  location: 'San Francisco, CA'
+});
+const store = useNuxtApp();
 const posts = ref([
-    // ... fetch posts data
-  ])
-  </script>
+  // ... fetch posts data
+]);
+</script>

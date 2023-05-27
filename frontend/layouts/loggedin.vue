@@ -1,6 +1,7 @@
 <template>
-    <div>
-      <friends-list></friends-list>
-      <slot />
-    </div>
+  <div>
+    <global-header></global-header>
+    <friends-list></friends-list>
+    <slot />
+  </div>
 </template>
